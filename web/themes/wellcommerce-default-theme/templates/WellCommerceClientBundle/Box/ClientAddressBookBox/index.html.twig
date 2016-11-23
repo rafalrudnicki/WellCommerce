@@ -19,9 +19,13 @@
                     <div class="col-sm-6 col-xs-12">
                         {{ macros.element(billingAddress.get('billingAddress.lastName')) }}
                     </div>
+                    <div class="col-sm-6 col-xs-12">
+                        {{ macros.element(billingAddress.get('billingAddress.companyName')) }}
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        {{ macros.element(billingAddress.get('billingAddress.vatId')) }}
+                    </div>
                 </div>
-
-
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
                         {{ macros.element(billingAddress.get('billingAddress.line1')) }}
@@ -37,6 +41,9 @@
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
                         {{ macros.element(billingAddress.get('billingAddress.city')) }}
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        {{ macros.element(billingAddress.get('billingAddress.state')) }}
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         {{ macros.element(billingAddress.get('billingAddress.postalCode')) }}
@@ -81,7 +88,7 @@
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
                         {{ macros.element(shippingAddress.get('shippingAddress.city')) }}
-                    </div>
+                    </div>                    
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         {{ macros.element(shippingAddress.get('shippingAddress.postalCode')) }}
                     </div>
